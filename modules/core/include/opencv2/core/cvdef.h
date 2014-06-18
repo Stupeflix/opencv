@@ -200,7 +200,10 @@
 */
 
 #if !defined _MSC_VER && !defined __BORLANDC__
-#  if defined __cplusplus && __cplusplus >= 201103L
+#  if defined _GLIBCXX_STD
+#    include <tr1/cstdint>
+     typedef std::tr1::uint32_t uint;
+#  elif defined __cplusplus && __cplusplus >= 201103L
 #    include <cstdint>
      typedef std::uint32_t uint;
 #  else
