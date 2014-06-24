@@ -61,8 +61,8 @@
 #  if defined __GNUC__ && defined __APPLE__
 #    pragma GCC diagnostic ignored "-Wshadow"
 #  endif
-#  include <unsupported/Eigen/MatrixFunctions>
-#  include <Eigen/Dense>
+#  include <eigen3/unsupported/Eigen/MatrixFunctions>
+#  include <eigen3/Eigen/Dense>
 #endif
 
 using namespace cv;
